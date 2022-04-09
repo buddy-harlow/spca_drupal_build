@@ -1,0 +1,12 @@
+<?php
+
+function icecream_preprocess_node(&$variables) {
+      // If the current user is logged in, and they are the owner of the node
+  // being viewed, add a suffix to the label variable.
+  $variables['current_user_is_owner'] = FALSE;
+  
+  if ($variables['logged_in'] == TRUE && $variables['node']->getOwnerId() == $variables['user']->id()) {
+    $variables['label']['#suffix'] =' [you are the author]';
+    $variables['current_user_is_owner'] = TRUE;
+  }
+}

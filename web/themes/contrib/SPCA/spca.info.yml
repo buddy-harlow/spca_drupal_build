@@ -1,0 +1,16 @@
+name: spca
+type: theme
+base theme: claro
+description: 'SPCA custom theme for protfolio purposes'
+core_version_requirement: ^8.8 || ^9 || ^10
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  content_bottom: 'Content (bottom)'
+  primary_menu: 'Primary menu'
+  banner_top: 'Banner (top)'
+  banner_bottom: 'Banner (bottom)'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
