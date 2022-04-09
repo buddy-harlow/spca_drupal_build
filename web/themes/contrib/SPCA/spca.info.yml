@@ -4,6 +4,8 @@ base theme: claro
 description: 'SPCA custom theme for protfolio purposes'
 core_version_requirement: ^8.8 || ^9 || ^10
 
+libraries:
+  - spca/global-styling
 regions:
   header: 'Header'
   content: 'Content'
