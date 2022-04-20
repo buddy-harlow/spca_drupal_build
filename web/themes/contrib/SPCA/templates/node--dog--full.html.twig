@@ -99,9 +99,9 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <h1 class="title">Hello from Dog template</h1>
-    
-    {{ content.field_color }}
+    <h1 class="dogtitle">Hello from Dog template</h1>
+    {{ kint(content.field_color) }}
+    {{ content.field_color['#title'] }}
     {{ content.field_color.0 }}
     {{ content }}
   </div>
