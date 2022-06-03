@@ -99,11 +99,50 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <h1 class="dogtitle">Hello from Dog template</h1>
-    {{ kint(content.field_color) }}
-    {{ content.field_color['#title'] }}
-    {{ content.field_color.0 }}
-    {{ content }}
+    <div class="animal-section">
+      <div class="animal-gallery"> 
+        {{ content.field_photos.0 }}
+      </div>
+
+      <div class="animal-info-card">
+      <div class="header-container">
+     <h1 class="animal-name">{{ node.getTitle() }}</h1>
+    </div>
+        <div class="animal-info-card-row">
+          <div class="animal-info-card-left">{{ content.field_color['#title'] }}</div>
+          <div class="animal-info-card-right">{{ content.field_color.0 }}</div>
+        </div>
+        <div class="animal-info-card-row">
+          <div class="animal-info-card-left">{{ content.field_breed['#title'] }}</div>
+          <div class="animal-info-card-right">{{ content.field_breed.0 }}</div>
+        </div>
+        <div class="animal-info-card-row">
+          <div class="animal-info-card-left">{{ content.field_age['#title'] }}</div>
+          <div class="animal-info-card-right">{{ content.field_age.0 }}</div>
+        </div>
+        <div class="animal-info-card-row">
+          <div class="animal-info-card-left">{{ content.field_gender['#title'] }}</div>
+          <div class="animal-info-card-right">{{ content.field_gender.0 }}</div>
+        </div>
+        <div class="animal-info-card-row">
+          <div class="animal-info-card-left">{{ content.field_size['#title'] }}</div>
+          <div class="animal-info-card-right">{{ content.field_size.0 }}</div>
+        </div>
+        <div class="animal-info-card-row">
+          <div class="animal-info-card-left">{{ content.field_spayed_neutered['#title'] }}</div>
+          <div class="animal-info-card-right">{{ content.field_spayed_neutered.0 }}</div>
+        </div>
+        <div class="animal-info-card-row">
+          <div class="animal-info-card-left">{{ content.field_declawed['#title'] }}</div>
+          <div class="animal-info-card-right">{{ content.field_declawed.0 }}</div>
+        </div>
+         <div class="animal-info-card-row">
+          <div class="animal-info-card-left">{{ content.field_housetrained['#title'] }}</div>
+          <div class="animal-info-card-right">{{ content.field_housetrained.0 }}</div>
+        </div>
+      </div>
+    </div>
+   {# {{ content }} #}
   </div>
 
 </article>

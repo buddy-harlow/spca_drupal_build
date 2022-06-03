@@ -1,6 +1,6 @@
 name: spca
 type: theme
-base theme: claro
+base theme: gin
 description: 'SPCA custom theme for protfolio purposes'
 core_version_requirement: ^8.8 || ^9 || ^10
 
